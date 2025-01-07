@@ -10,5 +10,4 @@ class CallCardScreenshots {
     fun CallCardPreviewTest() {
         CallCardPreview()
     }
-
 }
