@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.demo.utech.screenshottesting"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.demo.utech.screenshottesting"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -39,7 +39,7 @@ android {
         compose = true
     }
 
-    android.experimental.enableScreenshotTest=true
+    experimentalProperties["android.experimental.enableScreenshotTest"] = true
 }
 
 dependencies {
@@ -59,5 +59,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    screenshotTestImplementation(libs.androidx.compose.ui.tooling)
+    screenshotTestImplementation(libs.androidx.ui.tooling)
 }

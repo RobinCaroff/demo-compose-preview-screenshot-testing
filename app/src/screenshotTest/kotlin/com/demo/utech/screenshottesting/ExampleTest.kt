@@ -1,15 +1,15 @@
-package com.google.yourapp
+package com.demo.utech.screenshottesting
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.google.yourapp.ui.theme.MyApplicationTheme
+import com.demo.utech.screenshottesting.ui.theme.ScreenshotTestingTheme
 
 class ExamplePreviewsScreenshots {
 
     @Preview(showBackground = true)
     @Composable
     fun GreetingPreview() {
-        MyApplicationTheme {
+        ScreenshotTestingTheme {
             Greeting("Android!")
         }
     }
