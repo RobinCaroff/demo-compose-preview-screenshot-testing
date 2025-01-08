@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.demo.utech.screenshottesting.ui.theme.AppTheme
 
 @Composable
 fun CallCard(
@@ -41,5 +42,7 @@ fun CallCard(
 @Composable
 @Preview
 fun CallCardPreview() {
-    CallCard("Robin")
+    AppTheme {
+        CallCard("Robin")
+    }
 }
