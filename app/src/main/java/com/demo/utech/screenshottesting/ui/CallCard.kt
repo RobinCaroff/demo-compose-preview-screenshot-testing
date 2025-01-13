@@ -19,7 +19,6 @@ import com.demo.utech.screenshottesting.ui.theme.AppTheme
 fun CallCard(
     userName: String,
     modifier: Modifier = Modifier,
-
     ) {
     Card(
         modifier = modifier,
@@ -41,7 +40,7 @@ fun CallCard(
 
 @Composable
 @Preview
-fun CallCardPreview() {
+internal fun CallCardPreview() {
     AppTheme {
         CallCard("Robin")
     }
