@@ -1,5 +1,6 @@
 package com.demo.utech.screenshottesting.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -11,7 +12,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.demo.utech.screenshottesting.ui.theme.AppTheme
 
@@ -19,9 +22,14 @@ import com.demo.utech.screenshottesting.ui.theme.AppTheme
 fun CallCard(
     userName: String,
     modifier: Modifier = Modifier,
+    onCLick: () -> Unit = { }
     ) {
     Card(
-        modifier = modifier,
+        modifier = modifier
+            .clickable { onCLick() }
+            .semantics {
+                this.contentDescription = "Call $userName"
+            },
         shape = RoundedCornerShape(8.dp),
     ) {
         Column(
@@ -31,7 +39,7 @@ fun CallCard(
         ) {
             Icon(
                 imageVector = Icons.Rounded.Call,
-                contentDescription = "Call Icon"
+                contentDescription = null
             )
             Text(userName)
         }
@@ -39,7 +47,7 @@ fun CallCard(
 }
 
 @Composable
-@Preview
+@PreviewLightDark
 internal fun CallCardPreview() {
     AppTheme {
         CallCard("Robin")
