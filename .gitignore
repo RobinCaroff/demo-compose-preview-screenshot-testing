@@ -45,6 +45,7 @@ captures/
 .idea/compiler.xml
 .idea/dbnavigator.xml
 .idea/deploymentTargetDropDown.xml
+.idea/detekt.xml
 .idea/dictionaries
 .idea/gradle.xml
 .idea/jarRepositories.xml
