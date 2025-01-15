@@ -33,7 +33,7 @@ fun ContactItem(
         Icon(Icons.Outlined.AccountBox, contentDescription = "Favoris")
         Column(
             modifier = Modifier
-                .padding(8.dp)
+                .padding(9.dp)
         ) {
             Text(contact.name)
             Text(contact.phoneNumber)
@@ -43,7 +43,7 @@ fun ContactItem(
 
 @PreviewLightDark
 @Composable
-fun ContactItemPreview() {
+internal fun ContactItemPreview() {
     ContactItem(
         Contact("Alice", "1234567890")
     )

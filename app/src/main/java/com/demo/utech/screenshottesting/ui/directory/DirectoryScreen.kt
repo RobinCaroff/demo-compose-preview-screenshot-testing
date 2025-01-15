@@ -70,7 +70,7 @@ fun DirectoryScreen(
 
 @Composable
 @PreviewLightDark
-fun DirectoryScreenPreview(
+internal fun DirectoryScreenPreview(
     @PreviewParameter(ContactProvider::class) directory: List<Contact>
 ) {
     AppTheme {
