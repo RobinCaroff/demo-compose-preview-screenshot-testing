@@ -14,8 +14,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import com.demo.utech.screenshottesting.R
 import com.demo.utech.screenshottesting.ui.Contact
 
 @Composable
@@ -30,7 +32,7 @@ fun ContactItem(
         verticalAlignment = Alignment.CenterVertically
     ) {
         Spacer(modifier = Modifier.padding(4.dp))
-        Icon(Icons.Outlined.AccountBox, contentDescription = "Favoris")
+        Icon(Icons.Outlined.AccountBox, contentDescription = stringResource(R.string.favorites))
         Column(
             modifier = Modifier
                 .padding(8.dp)

@@ -15,3 +15,6 @@ annotation class PreviewsUOrientation
 @Preview(name = "Default Font Size", fontScale = 1f)
 @Preview(name = "Large Font Size", fontScale = 1.5f)
 annotation class PreviewsUFontScale
+
+@Preview(locale = "fr")
+annotation class PreviewFrench
