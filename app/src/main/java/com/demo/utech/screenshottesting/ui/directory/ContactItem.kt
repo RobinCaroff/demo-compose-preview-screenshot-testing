@@ -33,7 +33,7 @@ fun ContactItem(
         Icon(Icons.Outlined.AccountBox, contentDescription = "Favoris")
         Column(
             modifier = Modifier
-                .padding(9.dp)
+                .padding(8.dp)
         ) {
             Text(contact.name)
             Text(contact.phoneNumber)
