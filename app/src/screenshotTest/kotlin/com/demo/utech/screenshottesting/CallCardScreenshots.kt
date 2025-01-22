@@ -1,10 +1,10 @@
 package com.demo.utech.screenshottesting
 
 import androidx.compose.runtime.Composable
-import com.demo.utech.screenshottesting.ui.CallCardPreview
+import com.demo.utech.screenshottesting.ui.components.CallCardPreview
 
 class CallCardScreenshots {
-    @PreviewAnnotations
+    @PreviewScreenshotTest
     @Composable
     fun CallCardPreviewTest() {
         CallCardPreview()

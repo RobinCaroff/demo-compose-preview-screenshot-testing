@@ -1,11 +1,7 @@
-package com.demo.utech.screenshottesting.ui
+package com.demo.utech.screenshottesting.ui.data
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
-
-data class Contact(
-    val name: String,
-    val phoneNumber: String,
-)
+import com.demo.utech.screenshottesting.ui.model.Contact
 
 class ContactProvider : PreviewParameterProvider<List<Contact>> {
     override val values: Sequence<List<Contact>> = sequenceOf(

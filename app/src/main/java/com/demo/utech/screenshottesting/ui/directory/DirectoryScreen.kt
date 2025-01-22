@@ -19,8 +19,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import com.demo.utech.screenshottesting.R
-import com.demo.utech.screenshottesting.ui.Contact
-import com.demo.utech.screenshottesting.ui.ContactProvider
+import com.demo.utech.screenshottesting.ui.data.ContactProvider
+import com.demo.utech.screenshottesting.ui.model.Contact
 import com.demo.utech.screenshottesting.ui.theme.AppTheme
 
 @OptIn(ExperimentalMaterial3Api::class)

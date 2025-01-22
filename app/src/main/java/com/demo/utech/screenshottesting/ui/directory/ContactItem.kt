@@ -18,7 +18,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.demo.utech.screenshottesting.R
-import com.demo.utech.screenshottesting.ui.Contact
+import com.demo.utech.screenshottesting.ui.model.Contact
 
 @Composable
 fun ContactItem(

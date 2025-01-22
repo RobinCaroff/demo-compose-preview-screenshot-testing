@@ -1,4 +1,4 @@
-package com.demo.utech.screenshottesting.ui
+package com.demo.utech.screenshottesting.ui.theme
 
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
