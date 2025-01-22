@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Screenshot testing</string>
+    <string name="app_name" translatable="false">Screenshot testing</string>
+    <string name="favorites">Favorites</string>
+    <string name="contacts">Contacts</string>
+    <string name="recent">Recent</string>
+    <string name="directory">Directory</string>
+    <string name="call_name">Call %1$s</string>
+    <string name="click_me">Click me</string>
 </resources>

@@ -15,10 +15,12 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
-import com.demo.utech.screenshottesting.ui.Contact
-import com.demo.utech.screenshottesting.ui.ContactProvider
+import com.demo.utech.screenshottesting.R
+import com.demo.utech.screenshottesting.ui.data.ContactProvider
+import com.demo.utech.screenshottesting.ui.model.Contact
 import com.demo.utech.screenshottesting.ui.theme.AppTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -31,26 +33,26 @@ fun DirectoryScreen(
         modifier = modifier,
         topBar = {
             TopAppBar(
-                title = { Text("Directory") }
+                title = { Text(stringResource(R.string.directory)) }
             )
         },
         bottomBar = {
             NavigationBar {
                 NavigationBarItem(
-                    icon = { Icon(Icons.Outlined.Star, contentDescription = "Favoris") },
-                    label = { Text("Favoris") },
+                    icon = { Icon(Icons.Outlined.Star, contentDescription = stringResource(R.string.favorites)) },
+                    label = { Text(stringResource(R.string.favorites)) },
                     selected = false,
                     onClick = {}
                 )
                 NavigationBarItem(
-                    icon = { Icon(Icons.Outlined.DateRange, contentDescription = "Récents") },
-                    label = { Text("Récents") },
+                    icon = { Icon(Icons.Outlined.DateRange, contentDescription = stringResource(R.string.recent)) },
+                    label = { Text(stringResource(R.string.recent)) },
                     selected = false,
                     onClick = {}
                 )
                 NavigationBarItem(
-                    icon = { Icon(Icons.Default.Person, contentDescription = "Contacts") },
-                    label = { Text("Contacts") },
+                    icon = { Icon(Icons.Default.Person, contentDescription = stringResource(R.string.contacts)) },
+                    label = { Text(stringResource(R.string.contacts)) },
                     selected = true,
                     onClick = {}
                 )
