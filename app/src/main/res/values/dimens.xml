@@ -2,5 +2,5 @@
 <resources>
     <dimen name="small_spacer">4dp</dimen>
     <dimen name="medium_spacer">8dp</dimen>
-    <dimen name="icon_size">32dp</dimen>
+    <dimen name="icon_size">33dp</dimen>
 </resources>
