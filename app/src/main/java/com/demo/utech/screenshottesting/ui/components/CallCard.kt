@@ -51,7 +51,7 @@ fun CallCard(
 
 @Composable
 @PreviewLightDark
-internal fun CallCardPreview() {
+fun CallCardPreview() {
     AppTheme {
         CallCard("Robin")
     }
