@@ -12,7 +12,7 @@ composeBom = "2025.01.00"
 detekt = "1.23.7"
 detektComposeRule = "0.4.22"
 
-screenshot = "0.0.1-alpha08"
+screenshot = "0.0.1-alpha09"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
